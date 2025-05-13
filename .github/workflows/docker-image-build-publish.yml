@@ -73,6 +73,8 @@ jobs:
           push: true
           load: false
           tags: |
+            ${{ env.IMAGE_TAG }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             ${{ env.VERSION_TAG }}
           labels: ""
 
